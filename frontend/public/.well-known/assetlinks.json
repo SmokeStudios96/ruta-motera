@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "cl.smokestudios.rutamotera",
+      "sha256_cert_fingerprints": [
+        "02:8C:31:B5:BC:AB:5C:3E:9E:64:5F:68:5A:4D:B9:13:6A:F0:C7:B6:12:B2:19:AA:38:A4:15:0C:E2:AD:6B:A8"
+      ]
+    }
+  }
+]
