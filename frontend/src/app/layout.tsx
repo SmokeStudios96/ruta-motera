@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'RutaMotera - Dark Biker Navigator',
   description: 'Navegación de alta precisión, alertas climáticas y radar de ruta para motociclistas.',
   applicationName: 'RutaMotera',
-  manifest: '/manifest', // <-- ESTO FALTABA: Enlaza directo el manifest PWA de Next.js
+  manifest: '/manifest.json', // <-- Apuntando al archivo estático en public/
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
