@@ -11,9 +11,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'RutaMotera | Smoke Studios',
-  description: 'Navegador de alta precisión, alertas climáticas y radar de ruta para motociclistas.',
+  title: 'RutaMotera - Dark Biker Navigator',
+  description: 'Navegación de alta precisión, alertas climáticas y radar de ruta para motociclistas.',
   applicationName: 'RutaMotera',
+  manifest: '/manifest', // <-- ESTO FALTABA: Enlaza directo el manifest PWA de Next.js
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
@@ -29,7 +30,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: '#000000',
+  themeColor: '#09090b',
 };
 
 export default function RootLayout({
@@ -39,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`dark ${inter.className}`}>
-      <body className="bg-black text-zinc-100 antialiased min-h-screen overflow-hidden select-none">
+      <body className="bg-[#09090b] text-zinc-100 antialiased min-h-screen overflow-hidden select-none">
         <PwaRegister />
         {children}
       </body>
